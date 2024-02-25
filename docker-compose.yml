@@ -1,0 +1,14 @@
+services:
+
+  app:
+    container_name: "app"
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "80:80"
+    volumes:
+      - "./backend:/usr/src/app/"
+      - "./backend/log:/var/log/app"
+      - "./frontend/build:/usr/src/app/react-app"
+    restart: always

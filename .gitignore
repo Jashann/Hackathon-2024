@@ -1,0 +1,8 @@
+# IDE Files
+.idea
+
+# Backend Files
+*.log
+database.db
+venv
+backend/react-app
